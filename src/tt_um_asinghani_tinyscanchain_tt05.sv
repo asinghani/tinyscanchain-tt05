@@ -14,12 +14,12 @@ module tt_um_asinghani_tinyscanchain_tt05 (
     seven_segment_seconds mod (
         .clk(clk),
         .rst(!rst_n),
-        .ena(uio_in[0]),
+        .ena(ui_in[0]),
         .led_out(uo_out[6:0]),
         
         .scan_in(ui_in[1]),
         .scan_en(ui_in[2]),
-        .scan_out(ui_out[7])
+        .scan_out(uo_out[7])
     );
 
     assign uio_out = '0;
